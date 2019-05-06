@@ -1,0 +1,159 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+@font-face {
+  font-family: 'miso';
+  src: url('../fonts/miso-bold.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.container {
+	height: 900px;
+	width: 1349px;
+	background-image: url('../images/deepspace3.jpg');
+	background-size: cover;
+}
+
+.header {
+	height: 60px;
+	width: 1349px;
+	background-color: #161616;
+
+}
+.header h1 {
+	display: inline-block;
+	margin-top: 15px;
+	margin-left: 15px;
+	color: white;
+	font-size: 40px;
+	font-family: 'miso', sans-serif;
+	kerning: 10px;
+}
+
+nav {
+	display: inline-block;
+	margin-left: 750px;
+
+}
+
+nav a {
+	margin-left: 20px;
+	text-decoration: none;
+	color: white;
+	font-family: 'miso', sans-serif;
+	font-size: 25px;
+
+}
+
+/*-------------------------BODY--------------------------*/
+
+form {
+	margin-top: 100px;
+	margin-left: 100px;
+	display: inline-block;
+}
+
+input {
+	display: block;
+	text-decoration: none;
+	border-radius: 10px;
+	height: 45px;
+	width: 350px;
+	border: none;
+	margin-top: 15px;
+}
+
+textarea {
+	border-radius: 10px;
+	height: 120px;
+	width: 350px;
+	margin-top: 15px;
+}
+
+.thank-you {
+	display: inline-block;
+	vertical-align: top;
+	height: 300px;
+	width: 300px;
+	margin-left: 260px;
+	margin-top: 100px;
+}
+
+.thank-you h1 {
+	color: white;
+	font-family: 'miso', sans-serif;
+	font-size: 45px;
+}
+
+/*-------------------------FOOTER--------------------------*/
+
+.footer {
+	height: 150px;
+	width: 1349px;
+	background-color: red;
+	margin-top: 120px;
+	background-color: #161616;
+}
+
+.footer-text {
+	font-size: 17px;
+	font-family: 'miso', sans-serif;
+	margin-left: 145px;
+	margin-top: 25px;
+	color: #e6e6e6;
+}
+
+.profile {
+	width: 315px;
+	height: 150px;
+	display: inline-block;
+	margin-left: 30px;
+}
+
+img {
+	width: 100px;
+	height: 100px;
+	float: left;
+	margin-top: 25px;
+	margin-left: 25px;
+}
+
+.footer-summary {
+	font-size: 17px;
+	font-family: 'miso', sans-serif;
+	margin-left: 145px;
+	margin-top: 25px;
+	color: #e6e6e6;
+}
+
+i {
+	display: inline-block;
+	height: 100px;
+	width: 100px;
+	color: white;
+	margin-left: -50px;
+	cursor: pointer;
+}
+.fa-linkedin-in {
+	margin-left: 50px;
+}
+
+h2 {
+	color: #e6e6e6;
+	font-family: 'miso', sans-serif;
+	font-size: 30px;
+	margin-top: 20px;
+	margin-bottom: 10px;
+	margin-left: 50px;
+}
+
+.media {
+	height: 150px;
+	width: 600px;
+	display: inline-block;
+	vertical-align: top;
+	margin-left: 100px;
+}
