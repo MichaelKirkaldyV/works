@@ -77,11 +77,30 @@ nav a {
 
 .photo {
 	margin-top: 100px;
-	height: 600px;
-	width: 600px;
+	height: 300px;
+	width: 300px;
 	background-color: white;
 	display: inline-block;
 	margin-left: 200px;
+}
+
+.box {
+	display: inline-block;
+}
+.tech{
+	height: 210px;
+	width: 390px;
+	margin-left: 201px;
+	margin-top: 75px;
+}
+
+.skill {
+	font-size: 25px;
+	color: white;
+}
+
+p {
+	color: white;
 }
 
 /*------------------FOOTER-----------------------*/
@@ -90,7 +109,7 @@ nav a {
 	height: 150px;
 	width: 1349px;
 	background-color: red;
-	margin-top: 236px;
+	margin-top: 144px;
 	background-color: #161616;
 }
 

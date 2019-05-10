@@ -11,7 +11,7 @@
 }
 
 .container {
-	height: 1000px;
+	height: 600px;
 	width: 1349px;
 	background-image: url('../images/deepspace3.jpg');
 	background-size: cover;
@@ -50,68 +50,12 @@ nav a {
 
 /*-------------------------BODY--------------------------*/
 
-.body {
-	width: 1349px;
-	height: 400px;
-}
-
-.space1, .space2, .space3 {
-	height: 230px;
-	width: 400px;
-	margin: 10px;
-}
-
-.space1 {
-	margin-left: 800px;
-	margin-top: 60px;
-}
-
-.space2 {
-	margin-left: 500px;
-}
-
-.space3 {
-	margin-left: 75px;
-}
-
-a {
-	text-decoration: none;
-}
-
-.project-title {
-	vertical-align: top;
+.success {
+	font-size: 50px;
 	font-family: 'miso', sans-serif;
-	font-size: 30px;
-	margin-bottom: 10px;
+	margin-top: 100px;
+	margin-left: 50px;
 	color: white;
-}
- 
- .project-description {
- 	display: inline-block;
- 	height: 175px;
- 	width: 150px;
- }
-
-.project-summary {
-	display: inline;
-	font-family: 'miso', sans-serif;
-	margin-right: 50px;
-	vertical-align: top;
-	color: white;
-}
-
-.red-planet {
-	height: 200px;
-	width: 200px;
-}
-
-.ring-planet {
-	width: 200px;
-	height: 120px;
-}
-
-.brown-planet, .ring-planet, .red-planet {
-	margin-right: 15px;
 }
 
 
@@ -121,8 +65,16 @@ a {
 	height: 150px;
 	width: 1349px;
 	background-color: red;
-	margin-top: 390px;
+	margin-top: 234px;
 	background-color: #161616;
+}
+
+.footer-text {
+	font-size: 17px;
+	font-family: 'miso', sans-serif;
+	margin-left: 145px;
+	margin-top: 25px;
+	color: #e6e6e6;
 }
 
 .profile {

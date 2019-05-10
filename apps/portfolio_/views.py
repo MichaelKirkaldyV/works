@@ -22,12 +22,13 @@ def resume(request):
 	return render(request, 'portfolio_/resume.html')
 
 def form_process(request):
-	#context manager makes sure connection is closed without needing to do manually.
-	#mail server/ port no.
-	print request
+	#Make connection with smtp instance
 	server = smtplib.SMTP('smtp.gmail.com',587)
+	#Identify as Gmail Client
 	server.ehlo()
+	#Secure email with tls encryption
 	server.starttls()
+	#Re-Identify with encrpted connection
 	server.ehlo()
 
 	server.login('kirkaldymichaelv@gmail.com', 'afszipzhfurcupei')
@@ -35,8 +36,13 @@ def form_process(request):
 	subject = request.POST['subject']
 	body = request.POST['body']
 	client_email = request.POST['email']
+	name = request.POST['name']
+	phone = request.POST['phone']
 
-	msg = 'subject: {}\n\n{}'.format(subject, body)
+	msg = 'subject: {}\n\n{}\n\n{}\n\n{}'.format(subject, client_email, phone, body)
 
 	server.sendmail(client_email, 'kirkaldymichaelv@gmail.com', msg)
-	return redirect('/')
+	return redirect('/success')
+
+def success(request):
+	return render(request, 'portfolio_/success.html')
