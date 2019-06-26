@@ -118,7 +118,7 @@ a {
 /*-------------------------FOOTER--------------------------*/
 
 .footer {
-	height: 150px;
+	height: 165px;
 	width: 1349px;
 	background-color: red;
 	margin-top: 390px;
@@ -171,8 +171,204 @@ h2 {
 
 .media {
 	height: 150px;
-	width: 600px;
+	width: 375px;
 	display: inline-block;
 	vertical-align: top;
 	margin-left: 100px;
+}
+
+/*--------------Responsive---------------------*/
+
+@media only screen and (max-width: 480px){
+
+	.container {
+		width: 100%;
+		height: 100%;
+	}
+
+	.header {
+		width: 100%;
+		height: 100%;
+	}
+
+	.header h1 {
+		text-align: center;
+		margin-left: 147px;
+	}
+
+	nav {
+		display: block;
+		margin: 0;
+		margin-top: 20px;
+		text-align: center;
+
+	}
+
+/*-------------------BODY------------------------------------*/
+
+	.body {
+		width: 100%;
+		height: 100%;
+		margin-top: 200px;
+	}
+
+	.space1, .space2, .spac3 {
+		margin: 0 auto;
+		margin-top: 20px;
+		margin-right: 50px;
+	}
+
+	.space2 {
+		margin: 0;
+		margin-left: 35px;
+	}
+
+/*----------------------------FOOTER------------------------*/
+
+	.footer {
+		width: 100%;
+		height: 100%;
+	}
+
+	.profile {
+		margin-left: 95px;
+	}
+	.media {
+		margin: 0;
+		margin-left: 75px;
+	}
+
+
+}
+
+@media only screen and (min-width: 480px) and (max-width: 760px){
+
+	.container {
+		width: 100%;
+		height: 100%;
+	}
+
+	.header {
+		width: 100%;
+		height: 100%;
+		text-align: center;
+	}
+
+	nav {
+		display: block;
+		margin: 0;
+		margin-top: 20px;
+		text-align: center;
+
+	}
+
+	.header h1 {
+		margin-left: 30px;
+		text-align: center;
+	}
+
+/*------------------------BODY---------------------------------*/
+
+	.body {
+		height: 100%;
+		width: 100%;
+	}
+
+	.space1, .space2, .space3 {
+		margin: 0 auto;
+		margin-top: 100px;
+		margin-left: 175px;
+	}
+
+	.space1 {
+		margin: 0;
+		margin-left: 85px;
+		margin-top: 150px;
+	}
+
+	.space2 {
+		width: 100%;
+		margin: 0;
+		margin-left: 1px;
+	}
+
+/*-------------------------------FOOTER---------------------------------*/
+
+	.footer {
+		width: 100%;
+		height: 100%;
+	}
+
+	.profile {
+		margin: 0;
+		width: 315px
+		margin: 0 auto;
+	}
+
+	.media {
+		display: inline-block;
+		margin: 50px;
+		width: 375px;
+		margin: 0 auto;
+	}
+
+
+}
+
+@media only screen and (min-width: 760px) and (max-width: 1024px){
+
+	.container {
+		width: 100%;
+		height: 100%;
+	}
+
+	.header {
+		width: 100%;
+		height: 100%;
+		text-align: center;
+	}
+
+	nav {
+		display: block;
+		margin: 0;
+		margin-top: 20px;
+		text-align: center;
+	}
+
+/*-------------------------BODY--------------------------*/
+
+	.body {
+		width: 100%;
+		height: 100%;
+	}
+
+	.space1 {
+		margin: 0;
+		margin-top: 200px;
+		margin-left: 100px;
+	}
+
+	.space2 {
+		margin-left: 310px;
+	}
+
+/*-------------------------------FOOTER------------------------*/
+
+	.profile {
+		width: 315px;
+		margin: 0 auto;
+	}
+
+	.media {
+		margin: 0;
+		width: 375px;
+		margin: 0 auto;
+
+	}
+
+	.footer {
+		height: 100%;
+		width: 100%;
+		margin: auto;
+	}
 }

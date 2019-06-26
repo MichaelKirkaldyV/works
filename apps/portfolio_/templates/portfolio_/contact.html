@@ -18,16 +18,18 @@
 			</nav>
 		</div>
 		<div class="body">
-			<form action="form_process" method=post>
-				{% csrf_token %}
-				<input type="text" name="name" placeholder="Name">
-				<input type="text" name="company" placeholder="Company">
-				<input type="text" name="email" placeholder="Email">
-				<input type="text" name="phone" placeholder="Phone">
-				<input type="text" name="subject" placeholder="Subject">
-				<textarea name="body" placeholder="Message"></textarea>
-				<input type="submit" name="submit">
-			</form>
+			<div class="contact-box">
+				<form action="form_process" method=post>
+					{% csrf_token %}
+					<input type="text" name="name" placeholder="Name">
+					<input type="text" name="company" placeholder="Company">
+					<input type="text" name="email" placeholder="Email">
+					<input type="text" name="phone" placeholder="Phone">
+					<input type="text" name="subject" placeholder="Subject">
+					<textarea name="body" placeholder="Message"></textarea>
+					<input type="submit" name="submit">
+				</form>
+			</div>
 			<div class="thank-you">
 				<h1>Thank you for stopping by!</h1> 
 				<br>
@@ -38,7 +40,7 @@
 			<div class="profile">
 				<img src="static/portfolio_/images/profilepic.png">
 				<div class="text">
-					<p class="footer-text">Michael is equal parts creative and intellectual seeking position as a junior web developer in NYC, fluent in Python and Javascript.</p>
+					<p class="footer-text">Michael is equal parts creative and intellectual seeking a position as a junior web developer in NYC, fluent in Python and Javascript.</p>
 				</div>
 			</div>
 			<div class="media">

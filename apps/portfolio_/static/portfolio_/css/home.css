@@ -70,7 +70,7 @@ nav a {
 /*-------------------------FOOTER--------------------------*/
 
 .footer {
-	height: 150px;
+	height: 165px;
 	width: 1349px;
 	background-color: red;
 	margin-top: 260px;
@@ -123,8 +123,176 @@ h2 {
 
 .media {
 	height: 150px;
-	width: 600px;
+	width: 375px;
+
 	display: inline-block;
 	vertical-align: top;
 	margin-left: 100px;
+}
+
+/*--------------RESPONSIVE------------------------------------------*/
+
+@media only screen and (max-width: 500px){
+
+	.container {
+		width: 100%;
+		height: 100%;
+	}
+
+	.header {
+		width: 100%;
+		height: 100%;
+	}
+
+	.header h1 {
+		text-align: center;
+		margin-left: 147px;
+	}
+
+	nav {
+		display: block;
+		margin: 0;
+		margin-top: 20px;
+		text-align: center;
+
+	}
+
+
+/*-------------------BODY------------------------------------*/
+
+	.body {
+		width: 100%;
+		height: 100%;
+	}
+
+	.body h1 {
+		text-align: center;
+		margin-right: 50px;
+	}
+
+	
+/*----------------------------FOOTER------------------------*/
+
+	.footer {
+		width: 100%;
+		height: 100%;
+	}
+
+	.profile {
+		margin-left: 95px;
+		width: 100%;
+		margin: 0 auto;
+	}
+
+	.media {
+		margin-left: 75px;
+		width: 100%;
+		margin: 0 auto;
+	}
+
+
+
+}
+
+@media only screen and (min-width: 480px) and (max-width: 760px){
+
+	.container {
+		width: 100%;
+		height: 100%;
+	}
+
+	.header {
+		width: 100%;
+		height: 100%;
+		text-align: center;
+	}
+
+	nav {
+		display: block;
+		margin: 0;
+		margin-top: 20px;
+		text-align: center;
+
+	}
+
+	.header h1 {
+		margin-left: 30px;
+		text-align: center;
+	}
+
+/*--------------------BODY------------------------------*/
+
+	.body {
+		height: 100%;
+		width: 100%;
+	}
+
+/*--------------------HEADER-------------------------------*/
+
+	.footer {
+		width: 100%;
+		height: 100%;
+	}
+
+	.profile {
+		margin: 0;
+		width: 315px
+		margin: 0 auto;
+	}
+
+	.media {
+		display: inline-block;
+		margin: 50px;
+		width: 375px;
+		margin: 0 auto;
+	}
+
+}
+
+@media only screen and (min-width: 760px) and (max-width: 1024px){
+
+	.container {
+		width: 100%;
+		height: 100%;
+	}
+
+	.header {
+		width: 100%;
+		height: 100%;
+		text-align: center;
+	}
+
+	nav {
+		display: block;
+		margin: 0;
+		margin-top: 20px;
+		text-align: center;
+
+	}
+
+/*------------------------BODY-------------------------*/
+
+	.body {
+		width: 100%;
+		height: 100%;
+	}
+
+/*------------------FOOTER--------------------------*/
+
+	.profile {
+		width: 315px;
+		margin: 0 auto;
+	}
+
+	.media {
+		margin: 0;
+		width: 375px;
+		margin: 0 auto;
+
+	}
+
+	.footer {
+		height: 100%;
+		width: 100%;
+	}
 }
