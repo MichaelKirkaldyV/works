@@ -12,14 +12,14 @@
 
 .container {
 	height: 900px;
-	width: 1349px;
+	width: 100%;
 	background-image: url('../images/deepspace3.jpg');
 	background-size: cover;
 }
 
 .header {
 	height: 60px;
-	width: 1349px;
+	width: 100%;
 	background-color: #161616;
 
 }
@@ -35,7 +35,7 @@
 
 nav {
 	display: inline-block;
-	margin-left: 720px;
+	margin-left: 1260px;
 
 }
 
@@ -73,6 +73,7 @@ input {
 	width: 350px;
 	border: none;
 	margin-top: 15px;
+	padding-left: 10px;
 }
 
 textarea {
@@ -80,6 +81,14 @@ textarea {
 	height: 120px;
 	width: 350px;
 	margin-top: 15px;
+	padding-left: 10px;
+	padding-top: 10px;
+}
+
+.submit {
+	width: 360px;
+	font-family: 'miso', sans-serif;
+	font-size: 20px;
 }
 
 .thank-you {
@@ -100,11 +109,10 @@ textarea {
 /*-------------------------FOOTER--------------------------*/
 
 .footer {
-	height: 150px;
-	width: 1349px;
-	background-color: red;
-	margin-top: -61px;
+	height: 165px;
+	width: 100%;
 	background-color: #161616;
+	text-align: center;
 }
 
 .footer-text {
@@ -161,10 +169,7 @@ h2 {
 
 .media {
 	height: 150px;
-	width: 600px;
 	display: inline-block;
-	vertical-align: top;
-	margin-left: 100px;
 }
 
 /*--------------------------------RESPONSIVE------------------------------------*/

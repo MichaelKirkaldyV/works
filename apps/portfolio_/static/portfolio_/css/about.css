@@ -12,14 +12,14 @@
 
 .container {
 	height: 1000px;
-	width: 1349px;
+	width: 100%;
 	background-image: url('../images/deepspace3.jpg');
 	background-size: cover;
 }
 
 .header {
 	height: 60px;
-	width: 1349px;
+	width: 100%;
 	background-color: #161616;
 
 }
@@ -35,7 +35,7 @@
 
 nav {
 	display: inline-block;
-	margin-left: 720px;
+	margin-left: 1260px;
 
 }
 
@@ -111,11 +111,10 @@ p {
 /*------------------FOOTER-----------------------*/
 
 .footer {
-	height: 150px;
-	width: 1349px;
-	background-color: red;
-	margin-top: 305px;
+	height: 165px;
+	width: 100%;
 	background-color: #161616;
+	text-align: center;
 }
 
 .profile {
@@ -164,10 +163,7 @@ h2 {
 
 .media {
 	height: 150px;
-	width: 600px;
 	display: inline-block;
-	vertical-align: top;
-	margin-left: 100px;
 }
 
 /*--------------------------------RESPONSIVE------------------------------------*/
