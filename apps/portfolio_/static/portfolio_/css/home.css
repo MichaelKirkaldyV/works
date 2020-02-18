@@ -11,11 +11,10 @@
 }
 
 .container {
-	height: 100%;
+	height: 100vh;
 	width: 100%;
 	background-image: url('../images/rocketimage.jpg');
-	background-size: cover;
-	background-color: red;
+	background-color: black;
 }
 
 .header {
@@ -71,12 +70,13 @@ nav a {
 /*-------------------------FOOTER--------------------------*/
 
 .footer {
-	height: 165px;
+	height: 116px;
 	width: 100%;
-	margin-top: 275px;
 	background-color: #161616;
-	text-align: center;
+	text-align: center;	
+    margin-top: 243px;
 }
+
 
 .profile {
 	width: 315px;
@@ -103,31 +103,32 @@ p {
 
 i {
 	display: inline-block;
-	height: 100px;
 	width: 100px;
 	color: white;
 	margin-left: -50px;
 	cursor: pointer;
 }
+
 .fa-linkedin-in {
-	margin-left: 50px;
+	margin-left: -7px;
 }
+
 
 h2 {
 	color: #e6e6e6;
 	font-family: 'miso', sans-serif;
-	font-size: 30px;
-	margin-top: 50px;
+	font-size: 26px;
+	margin-top: 22px;
 	margin-bottom: 10px;
-	margin-left: 50px;
 }
 
 .media {
-	height: 150px;
+	height: 100px;
 	width: 375px;
 	display: inline-block;
 	vertical-align: top;
 }
+
 
 /*--------------RESPONSIVE------------------------------------------*/
 
