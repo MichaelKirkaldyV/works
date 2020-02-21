@@ -11,7 +11,7 @@
 }
 
 .container {
-	height: 1000px;
+	height: 100vh;
 	width: 100%;
 	background-image: url('../images/deepspace3.jpg');
 	background-size: cover;
@@ -108,13 +108,29 @@ p {
 	color: white;
 }
 
+.planet {
+	position: absolute;
+}
+
+.planet-one {
+	height: 450px;
+	width: 450px;
+	margin-top: 275px;
+}
+
+.planet-two {
+	height: 200px;
+	width: 200px;
+	margin-top: 300px;
+}
+
 /*------------------FOOTER-----------------------*/
 
 .footer {
-	height: 165px;
+	height: 116px;
 	width: 100%;
 	background-color: #161616;
-	text-align: center;
+	text-align: center;	
 }
 
 .profile {
@@ -142,7 +158,6 @@ img {
 
 i {
 	display: inline-block;
-	height: 100px;
 	width: 100px;
 	color: white;
 	margin-left: -50px;
@@ -162,8 +177,10 @@ h2 {
 }
 
 .media {
-	height: 150px;
+	height: 100px;
+	width: 375px;
 	display: inline-block;
+	vertical-align: top;
 }
 
 /*--------------------------------RESPONSIVE------------------------------------*/
