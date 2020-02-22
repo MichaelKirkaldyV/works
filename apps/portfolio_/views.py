@@ -22,27 +22,36 @@ def resume(request):
 	return render(request, 'portfolio_/resume.html')
 
 def form_process(request):
-	#Make connection with smtp instance
-	server = smtplib.SMTP('smtp.gmail.com',587)
-	#Identify as Gmail Client
-	server.ehlo()
-	#Secure email with tls encryption
-	server.starttls()
-	#Re-Identify with encrpted connection
-	server.ehlo()
+	errors = Query.objects.validate_query(request.POST)
 
-	server.login('kirkaldymichaelv@gmail.com', 'afszipzhfurcupei')
+	if len(errors):
+		for tag, error in errors.items():
+			messages.error(request, error)
+		return redirect('/contact')
+	
+	else:
+		#Make connection with smtp instance
+		server = smtplib.SMTP('smtp.gmail.com',587)
+		#Identify as Gmail Client
+		server.ehlo()
+		#Secure email with tls encryption
+		server.starttls()
+		#Re-Identify with encrpted connection
+		server.ehlo()
 
-	subject = request.POST['subject']
-	body = request.POST['body']
-	client_email = request.POST['email']
-	name = request.POST['name']
-	phone = request.POST['phone']
+		server.login('kirkaldymichaelv@gmail.com', 'afszipzhfurcupei')
 
-	msg = 'subject: {}\n\n{}\n\n{}\n\n{}'.format(subject, client_email, phone, body)
+		subject = request.POST['subject']
+		body = request.POST['body']
+		client_email = request.POST['email']
+		name = request.POST['name']
+		phone = request.POST['phone']
 
-	server.sendmail(client_email, 'kirkaldymichaelv@gmail.com', msg)
-	return redirect('/success')
+		msg = 'subject: {}\n\n{}\n\n{}\n\n{}'.format(name, subject, client_email, phone, body)
+
+		server.sendmail(client_email, 'kirkaldymichaelv@gmail.com', msg)
+		return redirect('/success')
+
 
 def success(request):
 	return render(request, 'portfolio_/success.html')

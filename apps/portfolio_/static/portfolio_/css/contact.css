@@ -107,6 +107,16 @@ textarea {
 	font-size: 45px;
 }
 
+.errors {
+	position: absolute;
+	color: red;
+	font-family: 'miso', sans-serif;
+	left: 878px;
+	bottom: 290px;
+	font-size: 20px;
+	
+}
+
 /*-------------------------FOOTER--------------------------*/
 
 .footer {
@@ -146,6 +156,30 @@ img {
 	position: absolute;
 	left: 260px;
 	top: 300px;
+}
+
+.astro2 {
+	height: 70px;
+	width: 70px;
+	position: absolute;
+	left: 800px;
+	bottom: 718px;
+}
+
+.astro3 {
+	height: 70px;
+	width: 70px;
+	position: absolute;
+	right: 1647px;
+    bottom: 378px;
+}
+
+.ring-planet {
+	position: absolute;
+	height: 196px;
+	width: 322px;
+	bottom: 720px;
+	right: 1685px;
 }
 
 .footer-summary {

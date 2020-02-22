@@ -31,9 +31,20 @@
 					<input type="submit" name="submit" class="submit">
 				</form>
 			</div>
+			<div class="errors">
+				{% if messages %}
+				<ul class="messages">
+					{% for message in messages %}
+					<li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+					{% endfor %}
+				 </ul>
+				{% endif %}
+			</div> 
 			<img class="planet planet-one" src="static/portfolio_/images/yellowplanet.png">
 			<img class="astro1" src="static/portfolio_/images/astro1.png">
-
+			<img class="astro2" src="static/portfolio_/images/astro2.png">
+			<img class="astro3" src="static/portfolio_/images/astro3.png">
+			<img class="planet ring-planet" src="static/portfolio_/images/ringplanet.png">
 			<div class="thank-you">
 				<h1>Thank you for stopping by!</h1> 
 				<br>
