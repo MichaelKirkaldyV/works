@@ -58,7 +58,6 @@ nav a {
 .space1, .space2, .space3 {
 	height: 230px;
 	width: 400px;
-	margin: 10px;
 }
 
 .space1 {
@@ -312,7 +311,7 @@ h2 {
 
 }
 
-@media only screen and (min-width: 760px) and (max-width: 1024px){
+@media only screen and (min-width: 760px) and (max-width: 1444px){
 
 	.container {
 		width: 100%;
@@ -349,6 +348,8 @@ h2 {
 		margin-left: 310px;
 	}
 
+
+
 /*-------------------------------FOOTER------------------------*/
 
 	.profile {
@@ -357,15 +358,22 @@ h2 {
 	}
 
 	.media {
-		margin: 0;
+		height: 104px;
 		width: 375px;
 		margin: 0 auto;
 
 	}
 
+	i {
+		display: inline-block;
+		width: 100px;
+		color: white;
+		margin-left: -50px;
+		cursor: pointer;
+	}
+
 	.footer {
 		height: 100%;
 		width: 100%;
-		margin: auto;
 	}
 }

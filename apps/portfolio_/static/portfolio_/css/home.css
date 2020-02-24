@@ -249,7 +249,7 @@ h2 {
 
 }
 
-@media only screen and (min-width: 760px) and (max-width: 1024px){
+@media only screen and (min-width: 760px) and (max-width: 1444px){
 
 	.container {
 		width: 100%;
@@ -285,14 +285,24 @@ h2 {
 	}
 
 	.media {
-		margin: 0;
+		height: 104px;
 		width: 375px;
-		margin: 0 auto;
+		display: inline-block;
+		vertical-align: top;
 
+	}
+
+	i {
+		display: inline-block;
+		width: 100px;
+		color: white;
+		margin-left: -50px;
+		cursor: pointer;
 	}
 
 	.footer {
 		height: 100%;
 		width: 100%;
+		margin-top: 357px;
 	}
 }
